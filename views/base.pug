@@ -1,0 +1,24 @@
+//base.pug
+doctype html 
+html
+  head
+    title Soul Dance Academy 
+    block scripts
+        script src='../static/index.js'
+    block style
+        style src='../static/style.css'      
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | SDA
+            li #[a(href="/") HOME]
+            li #[a(href="about") ABOUT]
+            li #[a(href="portfolio.pug") PORTFOLIO]
+            li #[a(href="class info") CLASS INFO]
+            li #[a(href="/contact") CONTACT US]
+    
+    block content 
+    footer#footer
+        | Copyright © 2019 Soul's Academy.com | All Rights Reserved
